@@ -179,7 +179,8 @@ li:hover{
 
 .header-social-links{
     position: absolute;
-    right: 1.25rem;
+    top: 40%;
+    right: 1.rem;
 }
 
 
