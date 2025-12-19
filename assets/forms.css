@@ -103,15 +103,26 @@ a:hover{
     display: flex;
     align-items: center;
     position: absolute;
-    top: 1.5rem;
-    left: 0.4rem;
+    top: 30%;
+    left: 0;
 }
 
-.twitter-x-img,
-.instagram-img{
-    height: 2.875rem;
-    width: 2.875rem;
+.logoimg{
+    height: 2rem;
+    width: 2rem;
 }
+
+.twitter-x-img, 
+.instagram-img{
+    height: 1.25rem;
+}
+
+.header-social-links{
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
 
 @media (min-width: 1200px) {
   .navmenu {
