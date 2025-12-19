@@ -154,10 +154,11 @@ a:hover{
 
   .navlinks{
     height: auto;
+    padding: 0.4rem 0;
     gap: 0.5rem;
   }
   .navlinks a {
-    font-size: 0.4rem;
+    font-size: 0.8rem;
   }
 
   .navbar h1{
