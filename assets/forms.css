@@ -172,14 +172,20 @@ a:hover{
 @media (max-width: 480px) {
   .navbar {
     padding: 0.7rem 4%;
+    height: fit-content;
   }
 
+  .navlinks{
+    height: auto;
+    padding: 0.4rem 0;
+    gap: 0.5rem;
+  }
   .navlinks a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .navbar h1{
-    font-size: 1.5rem;
+    font-size: small;
   }
 }
 
