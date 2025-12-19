@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -15,25 +16,44 @@ body{
 
 
 .header{
-    text-align: center;
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 2rem 0;
     transition: all 0.5s ease-in-out;
-}
-
-.container-fluid{
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    height: fit-content;
+    background: color-mix(in srgb, blue 25%, white 75%);
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navlinks{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+/* .container-fluid{
+    
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: color-mix(in srgb, blue 25%, white 75%);
-    height: 100px;
-    z-index: 1000;
-}
+    
+} */
 
 a{
     text-decoration: none;
@@ -62,9 +82,17 @@ a:hover{
     display: flex;
     align-items: center;
 }
+.logolink{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
 
 .logoimg{
-    height: 45px;
+    height: 2rem;
+    width: 2rem;
 }
 
 @media (min-width: 1200px) {
@@ -79,6 +107,26 @@ a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+}
+
+
 
 @media (max-width: 1199px) {
 
@@ -163,7 +211,7 @@ li:hover{
 
 .section-container{
     width: 100%;
-    min-height: calc(100vh - 82px);
+    min-height: calc(100vh - 5.1rem);
     position: relative;
     padding: 5rem 0;
     display: flex;
@@ -173,13 +221,14 @@ li:hover{
     height: fit-content;
 }
 
-section{
+.section{
   padding: 3.75 0;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 6.25rem;
   overflow: clip;
   margin-bottom: 0;
   padding-bottom: 0;
   height: 100%;
+  margin-top: 6rem;
 }
 
 @media (max-width: 1199px) {
@@ -417,7 +466,7 @@ h3{
 
 .about-main{
     padding: 5rem;
-    
+    margin-top: 3rem;
 }
 
 

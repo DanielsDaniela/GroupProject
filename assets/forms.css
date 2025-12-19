@@ -29,30 +29,48 @@ button{
 h5{color: black}
 
 main{
-    margin-top: 5rem;
+    margin-top: 6rem;
     margin-bottom: 2.75rem;
 }
 
-header{
-    text-align: center;
+.header{
     display: flex;
     align-items: center;
     padding: 1rem 0;
     transition: all 0.5s ease-in-out;
-}
-
-.container-fluid{
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    background: color-mix(in srgb, blue 25%, white 75%);
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navlinks{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+/* .container-fluid{
+    
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: color-mix(in srgb, blue 25%, white 75%);
-    height: 6rem;
-    z-index: 1000;
-}
+    
+} */
 
 a{
     text-decoration: none;
@@ -66,7 +84,7 @@ a:hover{
 
 
 .logo h1 {
-    font-size: 2.45rem;
+    font-size: 2rem;
     font-family: 'Soria', serif;
     margin: 0;
     font-weight: 500;
@@ -81,9 +99,17 @@ a:hover{
     display: flex;
     align-items: center;
 }
+.logolink{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1.5rem;
+    left: 0.4rem;
+}
 
 .logoimg{
-    height: 2.8rem;
+    height: 2.875rem;
+    width: 2.875rem;
 }
 
 @media (min-width: 1200px) {
@@ -120,7 +146,7 @@ a:hover{
     inset: 3.75rem 1.25rem 1.2rem 1.25rem;
     padding: 0.7rem 0;
     margin: 0;
-    border-radius: 6px;
+    border-radius: 0.4rem;
     box-shadow: none;
     overflow-y: auto;
     transition: 0.3s;
@@ -143,8 +169,8 @@ a:hover{
 
 li{
     display: inline-block;
-    margin-right: 30px;
-    font-size: 19px;
+    margin-right: 1.875rem;
+    font-size: 1.02rem;
 } 
 
 li:hover{
@@ -155,15 +181,13 @@ li:hover{
 }
 
 .twitter-x-img, 
-.instagram-img,
-.facebook-img,
-.linkedin-img{
-    height: 20px;
+.instagram-img{
+    height: 1.25rem;
 }
 
 .header-social-links{
     position: absolute;
-    right: 20px;
+    right: 1.25rem;
 }
 
 
@@ -187,9 +211,9 @@ li:hover{
   justify-content: center;
   align-items: center;
   background: color-mix(in srgb, blue 25%, white 75%);
-  font-size: 5rem;
+  font-size: 2rem;
   padding: 1rem;
-  height: 5rem fit-content;
+  height: 4.5rem fit-content;
 }
 
 .copyright-text-center{
@@ -199,7 +223,7 @@ li:hover{
 }
 
 .copyright-text-center p {
-  font-size: large;
+  font-size: 1rem;
   font-family: "Poppins",  sans-serif;
 }
 
@@ -218,8 +242,8 @@ li:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   transition: 0.3s;
 }
 
@@ -236,7 +260,7 @@ li:hover{
 }
 
 .credits {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   font-size: 1rem;
   text-align: center;
   font-family: "Poppins",  sans-serif;
