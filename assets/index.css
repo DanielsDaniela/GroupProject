@@ -148,7 +148,7 @@ a:hover{
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 0.7rem 4%;
+    padding: 0.3rem 3%;
     height: fit-content;
   }
 
