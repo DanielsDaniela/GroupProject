@@ -107,7 +107,8 @@ a:hover{
     left: 0.4rem;
 }
 
-.logoimg{
+.twitter-x-img,
+.instagram-img{
     height: 2.875rem;
     width: 2.875rem;
 }
@@ -160,7 +161,6 @@ a:hover{
 @media (max-width: 480px) {
   .navbar {
     padding: 0.7rem 4%;
-    height: fit-content;
   }
 
   .navlinks a {
